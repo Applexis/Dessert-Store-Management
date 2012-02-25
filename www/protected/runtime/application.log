@@ -1,0 +1,32 @@
+2012/02/25 05:54:01 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\stomanage\www\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\xampp\htdocs\stomanage\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\stomanage\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\stomanage\www\protected\extensions\bootstrap\components\Bootstrap.php(346): CAssetManager->publish('C:\xampp\htdocs...', false, -1, true)
+#3 C:\xampp\htdocs\stomanage\www\protected\extensions\bootstrap\components\Bootstrap.php(81): Bootstrap->getAssetsUrl()
+#4 C:\xampp\htdocs\stomanage\www\protected\extensions\bootstrap\components\Bootstrap.php(57): Bootstrap->registerCss()
+#5 C:\xampp\htdocs\stomanage\framework\base\CModule.php(388): Bootstrap->init()
+#6 C:\xampp\htdocs\stomanage\framework\base\CModule.php(493): CModule->getComponent('bootstrap')
+#7 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(146): CModule->preloadComponents()
+#8 C:\xampp\htdocs\stomanage\framework\YiiBase.php(127): CApplication->__construct('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\stomanage\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\stomanage\www\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#11 {main}
+REQUEST_URI=/stomanage/www/
+---
+2012/02/25 05:54:14 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\stomanage\www\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\xampp\htdocs\stomanage\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\stomanage\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\stomanage\www\protected\extensions\bootstrap\components\Bootstrap.php(346): CAssetManager->publish('C:\xampp\htdocs...', false, -1, true)
+#3 C:\xampp\htdocs\stomanage\www\protected\extensions\bootstrap\components\Bootstrap.php(81): Bootstrap->getAssetsUrl()
+#4 C:\xampp\htdocs\stomanage\www\protected\extensions\bootstrap\components\Bootstrap.php(57): Bootstrap->registerCss()
+#5 C:\xampp\htdocs\stomanage\framework\base\CModule.php(388): Bootstrap->init()
+#6 C:\xampp\htdocs\stomanage\framework\base\CModule.php(493): CModule->getComponent('bootstrap')
+#7 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(146): CModule->preloadComponents()
+#8 C:\xampp\htdocs\stomanage\framework\YiiBase.php(127): CApplication->__construct('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\stomanage\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\stomanage\www\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#11 {main}
+REQUEST_URI=/stomanage/www/
+---
