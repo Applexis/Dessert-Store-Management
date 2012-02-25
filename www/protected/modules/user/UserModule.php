@@ -26,13 +26,16 @@ class UserModule extends CWebModule
 	 * @var string
 	 * @desc hash method (md5,sha1 or algo hash function http://www.php.net/manual/en/function.hash.php)
 	 */
-	public $hash='md5';
+	//public $hash='md5';
+	public $hash = 'md5_salt';
+
+	const SALT = '5Fw_+QTecent';
 	
 	/**
 	 * @var boolean
 	 * @desc use email for activation user account
 	 */
-	public $sendActivationMail=true;
+	public $sendActivationMail=false;
 	
 	/**
 	 * @var boolean
@@ -44,7 +47,7 @@ class UserModule extends CWebModule
 	 * @var boolean
 	 * @desc activate user on registration (only $sendActivationMail = false)
 	 */
-	public $activeAfterRegister=false;
+	public $activeAfterRegister=true;
 	
 	/**
 	 * @var boolean
@@ -150,6 +153,8 @@ class UserModule extends CWebModule
 			return md5($string);
 		if ($hash=="sha1")
 			return sha1($string);
+		if ($hash=="md5_salt")
+			return md5($string.UserModule::SALT);
 		else
 			return hash($hash,$string);
 	}

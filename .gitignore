@@ -1,2 +1,4 @@
 /www/assets/
 /www/protected/runtime/
+/.tags
+/.tags_sorted_by_file

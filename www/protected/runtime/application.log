@@ -427,3 +427,366 @@ REQUEST_URI=/stomanage/www/gi
 ---
 2012/02/25 08:17:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stomanage.tbl_uesrs' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_uesrs`.
 in C:\xampp\htdocs\stomanage\www\index.php (13)
+2012/02/25 17:46:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profilefield".' in C:\xampp\htdocs\stomanage\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CController.php(271): CController->missingAction('profilefield')
+#1 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): CController->run('profilefield')
+#2 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/profi...')
+#3 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/stomanage/www/user/user/profilefield
+---
+2012/02/25 17:47:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 17:48:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 17:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 17:50:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/4
+---
+2012/02/25 17:51:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/3
+---
+2012/02/25 17:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/5
+---
+2012/02/25 17:53:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/5
+---
+2012/02/25 17:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/5
+---
+2012/02/25 17:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/1
+---
+2012/02/25 17:56:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/2
+---
+2012/02/25 17:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 17:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/3
+---
+2012/02/25 17:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/4
+---
+2012/02/25 17:58:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/5
+---
+2012/02/25 18:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/6
+---
+2012/02/25 18:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/3
+---
+2012/02/25 18:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/4
+---
+2012/02/25 18:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/update/id/5
+---
+2012/02/25 19:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 19:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 19:48:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/4374645a/js/form.js".' in C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/4374645a...')
+#1 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/stomanage/www/assets/4374645a/js/form.js
+HTTP_REFERER=http://localhost/stomanage/www/user/profilefield/create
+---
+2012/02/25 20:53:19 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\xampp\htdocs\stomanage\www\protected\modules\user\UserModule.php:215)
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#1 C:\xampp\htdocs\stomanage\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\stomanage\framework\web\CController.php(287): RegistrationController->runAction()
+#3 C:\xampp\htdocs\stomanage\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#4 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): RegistrationController->run()
+#5 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\stomanage\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/stomanage/www/user/registration
+in C:\xampp\htdocs\stomanage\www\protected\modules\user\UserModule.php (215)
+in C:\xampp\htdocs\stomanage\www\protected\modules\user\controllers\RegistrationController.php (58)
+in C:\xampp\htdocs\stomanage\www\index.php (13)
+2012/02/25 21:31:58 [error] [php] include(BootHtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\stomanage\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php(25): spl_autoload_call()
+#1 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#4 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\stomanage\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(207): CContentDecorator->run()
+#7 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(301): SiteController->endWidget()
+#8 C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php(5): SiteController->endContent()
+#9 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require()
+#10 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#11 C:\xampp\htdocs\stomanage\framework\web\CController.php(785): SiteController->renderFile()
+#12 C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php(32): SiteController->render()
+#13 C:\xampp\htdocs\stomanage\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\xampp\htdocs\stomanage\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\stomanage\framework\web\CController.php(287): SiteController->runAction()
+#16 C:\xampp\htdocs\stomanage\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#17 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): SiteController->run()
+#18 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#19 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\stomanage\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/stomanage/www/site/index
+in C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php (25)
+in C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php (5)
+in C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php (32)
+2012/02/25 21:32:44 [error] [php] include(BootHtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\stomanage\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php(25): spl_autoload_call()
+#1 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#4 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\stomanage\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(207): CContentDecorator->run()
+#7 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(301): SiteController->endWidget()
+#8 C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php(5): SiteController->endContent()
+#9 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require()
+#10 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#11 C:\xampp\htdocs\stomanage\framework\web\CController.php(785): SiteController->renderFile()
+#12 C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php(32): SiteController->render()
+#13 C:\xampp\htdocs\stomanage\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\xampp\htdocs\stomanage\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\stomanage\framework\web\CController.php(287): SiteController->runAction()
+#16 C:\xampp\htdocs\stomanage\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#17 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): SiteController->run()
+#18 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#19 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\stomanage\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/stomanage/www/site/index
+in C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php (25)
+in C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php (5)
+in C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php (32)
+2012/02/25 21:33:05 [error] [php] include(BootHtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\stomanage\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php(25): spl_autoload_call()
+#1 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#4 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\stomanage\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(207): CContentDecorator->run()
+#7 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(301): SiteController->endWidget()
+#8 C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php(5): SiteController->endContent()
+#9 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require()
+#10 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#11 C:\xampp\htdocs\stomanage\framework\web\CController.php(785): SiteController->renderFile()
+#12 C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php(32): SiteController->render()
+#13 C:\xampp\htdocs\stomanage\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\xampp\htdocs\stomanage\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\stomanage\framework\web\CController.php(287): SiteController->runAction()
+#16 C:\xampp\htdocs\stomanage\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#17 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): SiteController->run()
+#18 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#19 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\stomanage\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/stomanage/www/site/index
+in C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php (25)
+in C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php (5)
+in C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php (32)
+2012/02/25 21:42:25 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.widgets.BootCrumbs" is invalid. Make sure it points to an existing PHP file.' in C:\xampp\htdocs\stomanage\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.bootstrap.w...', true)
+#1 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'ext.bootstrap.w...', Array)
+#2 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.bootstrap.w...', Array)
+#3 C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php(44): CBaseController->widget('ext.bootstrap.w...', Array)
+#4 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\stomanage\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#12 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\stomanage\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\stomanage\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\xampp\htdocs\stomanage\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\stomanage\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\stomanage\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): CController->run('index')
+#21 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#22 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/stomanage/www/site/index
+HTTP_REFERER=http://localhost/stomanage/www/user/profile
+---
+2012/02/25 21:43:23 [error] [exception.CException] exception 'CException' with message 'Property "BootNavbar.type" is not defined.' in C:\xampp\htdocs\stomanage\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampp\htdocs\stomanage\framework\web\CWidgetFactory.php(162): CComponent->__set('type', 'tabs')
+#1 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'ext.bootstrap.w...', Array)
+#2 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.bootstrap.w...', Array)
+#3 C:\xampp\htdocs\stomanage\www\protected\views\layouts\main.php(39): CBaseController->widget('ext.bootstrap.w...', Array)
+#4 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\stomanage\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\stomanage\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\stomanage\www\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#12 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\stomanage\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\stomanage\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\stomanage\www\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\stomanage\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\xampp\htdocs\stomanage\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\stomanage\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\stomanage\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(276): CController->run('index')
+#21 C:\xampp\htdocs\stomanage\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#22 C:\xampp\htdocs\stomanage\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\stomanage\www\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/stomanage/www/site/index
+HTTP_REFERER=http://localhost/stomanage/www/user/profile
+---
