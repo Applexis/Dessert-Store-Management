@@ -19,11 +19,13 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.user.models.*',
+		'application.modules.user.components.*',
 	),
 
 	'modules'=>array(
-		// uncomment the following to enable the Gii tool
-		
+		'user',
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'123456',
@@ -40,6 +42,7 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			'allowAutoLogin'=>true,
+			'loginUrl'=>array('/user/login'),
 		),
 		
 		'urlManager'=>array(
@@ -49,6 +52,7 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+			'showScriptName'=>false,
 		),
 		
 		'db'=>array(

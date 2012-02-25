@@ -85,9 +85,9 @@ class UserModule extends CWebModule
 	 */
 	//public $cacheEnable = false;
 	
-	public $tableUsers = '{{users}}';
-	public $tableProfiles = '{{profiles}}';
-	public $tableProfileFields = '{{profiles_fields}}';
+	public $tableUsers = 'tbl_users';
+	public $tableProfiles = 'tbl_profiles';
+	public $tableProfileFields = 'tbl_profiles_fields';
 	
 	static private $_user;
 	static private $_admin;
