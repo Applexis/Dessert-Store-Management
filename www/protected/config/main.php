@@ -21,6 +21,7 @@ return array(
 		'application.components.*',
 		'application.modules.user.models.*',
 		'application.modules.user.components.*',
+		'application.helpers.*',
 	),
 
 	'modules'=>array(
@@ -79,6 +80,7 @@ return array(
 				
 				array(
 					'class'=>'CWebLogRoute',
+					'levels' => 'info, trace',
 				),
 				
 			),
@@ -100,6 +102,14 @@ return array(
 	            ),
 	        ),
 		),
+
+		'image'=>array(
+            'class'=>'application.extensions.image.CImageComponent',
+            // GD or ImageMagick
+            'driver'=>'GD',
+            // ImageMagick setup path
+            'params'=>array('directory'=>'/opt/local/bin'),
+        ),
 	),
 
 	// application-level parameters that can be accessed
@@ -110,4 +120,5 @@ return array(
 	),
 
 	'language'=>'ch',
+	'timeZone'=>'Asia/Shanghai',
 );

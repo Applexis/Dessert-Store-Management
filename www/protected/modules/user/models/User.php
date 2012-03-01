@@ -73,6 +73,7 @@ class User extends CActiveRecord
 	{
 		$relations = array(
 			'profile'=>array(self::HAS_ONE, 'Profile', 'user_id'),
+			'card'=>array(self::HAS_ONE, 'Card', 'user_id'),
 		);
 		if (isset(Yii::app()->getModule('user')->relations)) $relations = array_merge($relations,Yii::app()->getModule('user')->relations);
 		return $relations;
@@ -95,6 +96,7 @@ class User extends CActiveRecord
 			'lastvisit' => UserModule::t("Last visit"),
 			'superuser' => UserModule::t("Superuser"),
 			'status' => UserModule::t("Status"),
+			'card_id' => UserModule::t("Card ID"),
 		);
 	}
 	
@@ -115,6 +117,9 @@ class User extends CActiveRecord
             ),
             'notsafe'=>array(
             	'select' => 'id, username, password, email, activkey, createtime, lastvisit, superuser, status',
+            ),
+            'myself'=>array(
+            	'condition'=>'id='.Yii::app()->user->id,
             ),
         );
     }
