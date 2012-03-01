@@ -37,6 +37,7 @@
 				array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'会员卡', 'url'=>array('/card/index'), 'visible'=>!(Yii::app()->user->name=='admin')),
 				array('label'=>'产品管理', 'url'=>array('/product/index'), 'visible'=>Yii::app()->user->name=='admin'),
+				array('label'=>'今日产品', 'url'=>array('/productmanage/index')),
 			),
 		)); ?>
 	</div><!-- mainmenu -->

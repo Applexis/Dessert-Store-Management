@@ -121,7 +121,7 @@ class Product extends CActiveRecord
 		$store_path = Yii::app()->basePath . '/../uploads/product_img/' . $filename;
 		$pic->saveAs($store_path);
 		$revise_image = Yii::app()->image->load($store_path);
-		$revise_image->resize(200,200);
+		$revise_image->resize(160,160);
 		$revise_image->save($store_path);
 	}
 

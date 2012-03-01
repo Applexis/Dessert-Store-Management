@@ -1,6 +1,6 @@
 <?php
 
-class ProductManageController extends Controller
+class ReservationController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -59,23 +59,22 @@ class ProductManageController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate($product_id)
+	public function actionCreate()
 	{
-		$model=new ProductManage;
+		$model=new Reservation;
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['ProductManage']))
+		if(isset($_POST['Reservation']))
 		{
-			$model->attributes=$_POST['ProductManage'];
-			$model->product_id = $product_id;
+			$model->attributes=$_POST['Reservation'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
-			'model' =>$model,
-			'pid'   =>$product_id,
+			'model'=>$model,
 		));
 	}
 
@@ -91,9 +90,9 @@ class ProductManageController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['ProductManage']))
+		if(isset($_POST['Reservation']))
 		{
-			$model->attributes=$_POST['ProductManage'];
+			$model->attributes=$_POST['Reservation'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -128,7 +127,7 @@ class ProductManageController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider(ProductManage::model()->today()->with('product'));
+		$dataProvider=new CActiveDataProvider('Reservation');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -139,10 +138,10 @@ class ProductManageController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new ProductManage('search');
+		$model=new Reservation('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['ProductManage']))
-			$model->attributes=$_GET['ProductManage'];
+		if(isset($_GET['Reservation']))
+			$model->attributes=$_GET['Reservation'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -156,7 +155,7 @@ class ProductManageController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=ProductManage::model()->findByPk($id);
+		$model=Reservation::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -168,7 +167,7 @@ class ProductManageController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='product-manage-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='reservation-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
