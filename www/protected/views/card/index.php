@@ -14,7 +14,9 @@ else
 ?>
 
 <h1>会员卡</h1>
-
+<?php 
+	$this->widget('ext.bootstrap.widgets.BootAlert');
+ ?>
 <?php $this->widget('ext.bootstrap.widgets.BootListView',array(
 	'dataProvider' =>$dataProvider,
 	'itemView'     =>'_view',

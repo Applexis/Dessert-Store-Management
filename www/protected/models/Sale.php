@@ -11,8 +11,8 @@
  * @property string $buy_time
  *
  * The followings are the available model relations:
+ * @property ProductManage $product
  * @property TblUsers $user
- * @property Product $product
  */
 class Sale extends CActiveRecord
 {
@@ -59,7 +59,7 @@ class Sale extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'user' => array(self::BELONGS_TO, 'TblUsers', 'user_id'),
-			'product' => array(self::BELONGS_TO, 'Product', 'product_id'),
+			'product' => array(self::BELONGS_TO, 'ProductManage', 'product_id'),
 		);
 	}
 

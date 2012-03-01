@@ -69,8 +69,26 @@ class SaleController extends Controller
 		if(isset($_POST['Sale']))
 		{
 			$model->attributes=$_POST['Sale'];
-			if($model->save())
+			$model->buy_time = date( "Y-m-d H:i:s");
+			$model->user_id = Yii::app()->user->id;
+			$model->product_id = $id;
+			$money_need = $model->amount * ProductManage::model()->findByPk($id)->price;
+			$user_card = Card::model()->findByAttributes(array('user_id'=>$model->user_id));
+			if ($user_card == false) {
+				Yii::app()->user->setFlash('warning', '神马，你还没有会员卡？赶紧办一张吧亲~');
+				$this->redirect(array('card/index'));
+			}
+			$money_user = $user_card->money;
+			if ($money_need > $money_user) {
+				Yii::app()->user->setFlash('error', '亲，你的余额不足噢:( <br> 不如现在就充值吧 :D');
+				$this->redirect(array('card/index'));
+			}
+			if($model->save()) {
+				$user_card->money -= $money_need;
+				$user_card->save();
+				Yii::app()->user->setFlash('success', '购买成功亲~');
 				$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 
 		$this->render('create',array(
