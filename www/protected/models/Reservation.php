@@ -73,9 +73,9 @@ class Reservation extends CActiveRecord
 			'id' => 'ID',
 			'user_id' => 'User',
 			'product_id' => 'Product',
-			'amount' => 'Amount',
-			'mk_reserve_time' => 'Mk Reserve Time',
-			'reserve_time' => 'Reserve Time',
+			'amount' => '数量',
+			'mk_reserve_time' => '订单产生时间',
+			'reserve_time' => '预定时间',
 		);
 	}
 
@@ -101,4 +101,13 @@ class Reservation extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function scopes() {
+		return array(
+			'owns' => array(
+				'condition' => 'user_id='.Yii::app()->user->id,
+			),
+		);
+	}
+
 }

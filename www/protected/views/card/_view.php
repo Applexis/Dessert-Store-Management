@@ -17,6 +17,10 @@
 				'name' =>'money',
 				'value'=>$data->money.' 元',
 			),
+			array(
+				'name' =>'level',
+				'value'=>$data->levelTxt[$data->level],
+			),
 		),
 	));
 	?>

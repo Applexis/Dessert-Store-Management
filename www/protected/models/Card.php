@@ -9,12 +9,20 @@
  * @property string $activate_date
  * @property integer $money
  * @property integer $user_id
+ * @property integer $level
  *
  * The followings are the available model relations:
  * @property TblUsers $user
  */
 class Card extends CActiveRecord
 {
+
+
+	public $levelTxt = array(
+		0 => '普通会员',
+		1 => '银卡会员',
+		2 => '金卡会员',
+	);
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -42,7 +50,7 @@ class Card extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('activated, activate_date, money, user_id', 'required'),
-			array('activated, money, user_id', 'numerical', 'integerOnly'=>true),
+			array('activated, money, user_id, level', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, activated, activate_date, money, user_id', 'safe', 'on'=>'search'),
@@ -72,6 +80,7 @@ class Card extends CActiveRecord
 			'activate_date' => '激活日期',
 			'money' => '余额',
 			'user_id' => '用户名',
+			'level' => '级别',
 		);
 	}
 
@@ -91,6 +100,7 @@ class Card extends CActiveRecord
 		$criteria->compare('activate_date',$this->activate_date,true);
 		$criteria->compare('money',$this->money);
 		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('level',$this->level);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

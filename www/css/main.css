@@ -155,7 +155,7 @@ div.search-form
 
 .portlet
 {
-
+	
 }
 
 .portlet-decoration
@@ -163,6 +163,7 @@ div.search-form
 	padding: 3px 8px;
 	background: #B7D6E7;
 	border-left: 5px solid #6FACCF;
+
 }
 
 .portlet-title

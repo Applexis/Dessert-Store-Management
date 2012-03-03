@@ -1,23 +1,8 @@
 <div class="view">
 
-	<b><?php echo CHtml::encode('用户名'); ?>:</b>
-	<?php echo CHtml::encode($data->user_id); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('product_id')); ?>:</b>
-	<?php echo CHtml::encode($data->product_id); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('amount')); ?>:</b>
-	<?php echo CHtml::encode($data->amount); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('buy_time')); ?>:</b>
-	<?php echo CHtml::encode($data->buy_time); ?>
-	<br />
 <?php 
 	$product_manage = ProductManage::model()->with('product')->findByPk($data->product_id);
-$this->widget('ext.bootstrap.widgets.BootDetailView',array(
+	$this->widget('ext.bootstrap.widgets.BootDetailView',array(
 	'data'=>$data,
 	'attributes'=>array(
 		array(

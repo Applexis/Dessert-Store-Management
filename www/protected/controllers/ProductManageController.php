@@ -69,6 +69,12 @@ class ProductManageController extends Controller
 		{
 			$model->attributes=$_POST['ProductManage'];
 			$model->product_id = $product_id;
+			$check = ProductManage::model()->findByAttributes(array('product_id'=>$product_id, 'date'=>$_POST['ProductManage']['date']));
+			if ($check != false){
+				$check->amount += $_POST['ProductManage']['amount'];
+				$check->save();
+				$this->redirect(array('view','id'=>$check->id));
+			}
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

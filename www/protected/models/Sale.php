@@ -98,4 +98,12 @@ class Sale extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function scopes() {
+		return array(
+			'owns' => array(
+				'condition' => 'user_id='.Yii::app()->user->id,
+			),
+		);
+	}
 }

@@ -146,7 +146,7 @@ class SaleController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Sale');
+		$dataProvider=new CActiveDataProvider(Sale::model()->owns());
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
