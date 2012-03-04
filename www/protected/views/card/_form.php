@@ -13,7 +13,7 @@
 	<br><br>
 	<div class="actions">
 		<?php echo CHtml::htmlButton($model->isNewRecord ? '<i class="icon-ok icon-white"></i> 充值' : '<i class="icon-ok icon-white"></i> 确认',array('class'=>'btn btn-primary', 'type'=>'submit')); ?>
-		<?php echo CHtml::htmlButton('<i class="icon-ban-circle"></i> Reset', array('class'=>'btn', 'type'=>'reset')); ?>
+		<?php echo CHtml::htmlButton('<i class="icon-ban-circle"></i> 重填', array('class'=>'btn', 'type'=>'reset')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

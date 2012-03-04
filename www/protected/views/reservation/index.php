@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Reservations',
+	'预订',
 );
 
 $this->menu=array(
-	array('label'=>'Create Reservation','url'=>array('create')),
-	array('label'=>'Manage Reservation','url'=>array('admin')),
+	array('label'=>'今日产品','url'=>array('/productmanage/index')),
+	array('label'=>'返回主页','url'=>array('/index.php')),
 );
 ?>
 

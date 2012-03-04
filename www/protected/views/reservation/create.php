@@ -1,16 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	'Reservations'=>array('index'),
-	'Create',
+	'预订'=>array('index'),
+	'创建',
 );
 
 $this->menu=array(
-	array('label'=>'List Reservation','url'=>array('index')),
-	array('label'=>'Manage Reservation','url'=>array('admin')),
+	array('label'=>'浏览我的预订','url'=>array('index')),
+	array('label'=>'返回主页','url'=>array('/index.php')),
 );
 ?>
 
-<h1>Create Reservation</h1>
+<h1>预订产品</h1>
 
 <?php $check = ProductManage::model()->with('product')->findByPk($pmid);
 if ($check != false){

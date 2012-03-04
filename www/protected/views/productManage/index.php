@@ -1,15 +1,22 @@
 <?php
 $this->breadcrumbs=array(
-	'Product Manages',
+	'产品查看',
 );
 
-$this->menu=array(
-	array('label'=>'Create ProductManage','url'=>array('create')),
-	array('label'=>'Manage ProductManage','url'=>array('admin')),
-);
+if (Yii::app()->user->name == 'admin')
+	$this->menu=array(
+		array('label'=>'Create ProductManage','url'=>array('create')),
+		array('label'=>'Manage ProductManage','url'=>array('admin')),
+	);
+else 
+	$this->menu = array(
+		array('label'=>'我的购买', 'url'=>array('sale/index')),
+		array('label'=>'我的预订', 'url'=>array('reservation/index')),
+	)
 ?>
 
-<h1>今日产品</h1>
+<h1><?php if (isset($title)) echo $title;
+else echo "今日产品" ?></h1>
 <div class="well">
 <?php
 

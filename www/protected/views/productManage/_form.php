@@ -16,15 +16,15 @@
 	</div>
 
 	<div class="control-group">
-		<label class="control-label required" for="ProductManage_date">Date <span class="required">*</span></label>
+		<label class="control-label required" for="ProductManage_date">起始日期 <span class="required">*</span></label>
 		<div class="controls">	
 			<?php 
 				$this->widget('zii.widgets.jui.CJuiDatePicker', array(
-				    'name'=>'ProductManage[date]',
+				    'name'=>'start_date',
 				    // additional javascript options for the date picker plugin
 				    'options'=>array(
-				        'showAnim'=>'fold',
-				        'dataFormat'=>'Y-m-d',
+				        //'showAnim'=>'fold',
+				        'dateFormat'=>'yy-mm-dd',
 				    ),
 				    'htmlOptions'=>array(
 				        'class'=>'span5',
@@ -34,6 +34,27 @@
 			?>
 		</div>
 	</div>
+
+		<div class="control-group">
+		<label class="control-label required" for="ProductManage_date">结束日期 <span class="required">*</span></label>
+		<div class="controls">	
+			<?php 
+				$this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				    'name'=>'end_date',
+				    // additional javascript options for the date picker plugin
+				    'options'=>array(
+				        //'showAnim'=>'fold',
+				        'dateFormat'=>'yy-mm-dd',
+				    ),
+				    'htmlOptions'=>array(
+				        'class'=>'span5',
+				    ),
+			        'value'=>date('Y-m-d'),
+				));
+			?>
+		</div>
+	</div>
+
 
 	<?php echo $form->textFieldRow($model,'amount',array('class'=>'span5')); ?>
 

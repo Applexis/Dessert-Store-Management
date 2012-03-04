@@ -1,10 +1,31 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - About';
 $this->breadcrumbs=array(
-	'About',
+	'关于',
 );
 ?>
-<h1>About</h1>
+<h1>集团简介</h1>
+<br>
+<br>
+<div class="row">
+	<div class="span4 offset1">
+		<p>
+		克莉絲汀國際控股有限公司(「克莉絲汀」或「公司」)是中國領先的烘焙產品連鎖經營商。我們自1993年起生產及銷售烘焙產品，是最早進入中國市場的外資投資烘焙企業之一。據Euromonitor的資料，於2010年12月31日，我們擁有及經營中國銷售烘焙產品的最大(就收益及零售門店數目而言)一家零售連鎖店。
+		</p>
+	</div>
+	<div class="span5">
+		<img src="../images/about_3.jpg" alt="">
+	</div>
+</div>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <tt><?php echo __FILE__; ?></tt>.</p>
+<div class="row">
+	<div class="span4 offset1">
+		<img src="../images/about_4.jpg" alt="">
+	</div>
+
+	<div class="span5">
+		<p>
+			我們主要在長江三角地區的黃金地段及主要城市進行營運，包括上海、江蘇省及浙江省。截至2011年12月31日，共有898間零售門店，形成多管道零售網路，透過好鄰居店、地鐵店、旗艦店及歐式現烤店吸引不同客戶分部。我們銷售逾2,200種麵包、蛋糕、月餅、幹點及若干其他產品，更每月推出多種新產品，滿足不同需求。我們擁有五家中央烘焙工廠，集中採購材料，重視產品的安全、營養及品質穩定性。除了推出新品種烘焙產品外，我們亦專注於研發，令我們可推出GABA等新配方，幫助顧客「將健康生活帶回家」，也讓我們的聲譽及品牌價值廣受消費者認可，多年來獲得「上海市著名商標」等多個獎項。	
+		</p>
+	</div>
+</div>

@@ -4,7 +4,7 @@ body
 	padding: 0;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #E3E9ED;;
 }
 
 #page
@@ -155,14 +155,14 @@ div.search-form
 
 .portlet
 {
-	
+
 }
 
 .portlet-decoration
 {
 	padding: 3px 8px;
 	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
+	//border-left: 5px solid #64c6ea;
 
 }
 

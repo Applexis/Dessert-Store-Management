@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Sales'=>array('index'),
-	'Create',
+	'账单'=>array('index'),
+	'创建',
 );
 
 $this->menu=array(
-	array('label'=>'List Sale','url'=>array('index')),
-	array('label'=>'Manage Sale','url'=>array('admin')),
+	array('label'=>'我的账单','url'=>array('index')),
+	array('label'=>'所有产品','url'=>array('/productmanage/index')),
 );
 ?>
 

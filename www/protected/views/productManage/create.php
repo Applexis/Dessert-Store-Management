@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Product Manages'=>array('index'),
-	'Create',
+	'产品管理'=>array('index'),
+	'创建',
 );
 
 $this->menu=array(
-	array('label'=>'List ProductManage','url'=>array('index')),
-	array('label'=>'Manage ProductManage','url'=>array('admin')),
+	array('label'=>'列出产品计划','url'=>array('index')),
+	array('label'=>'产品计划管理','url'=>array('admin')),
 );
 ?>
 

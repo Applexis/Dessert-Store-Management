@@ -4,7 +4,7 @@ $this->breadcrumbs=array(
 );
 ?><h2><?php echo UserModule::t('Your profile'); ?></h2>
 <?php echo $this->renderPartial('menu'); ?>
-
+<br><br>
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">
 <?php echo Yii::app()->user->getFlash('profileMessage'); ?>

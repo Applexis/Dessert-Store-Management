@@ -1,8 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	'Cards'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'会员卡'=>array('index'),
+	'充值',
 );
 
 $this->menu=array(

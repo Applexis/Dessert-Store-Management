@@ -27,7 +27,7 @@ class ProductManageController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'search'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -67,16 +67,29 @@ class ProductManageController extends Controller
 
 		if(isset($_POST['ProductManage']))
 		{
-			$model->attributes=$_POST['ProductManage'];
-			$model->product_id = $product_id;
-			$check = ProductManage::model()->findByAttributes(array('product_id'=>$product_id, 'date'=>$_POST['ProductManage']['date']));
+			//$model->attributes=$_POST['ProductManage'];
+			
+			$start_date = $_POST['start_date'];
+			$end_date = $_POST['end_date'];
+
+			for ($idate = strtotime($start_date); $idate <= strtotime($end_date); $idate += 3600*24) {
+				$date = date('Y-m-d', $idate);
+
+				$imodel = new ProductManage;
+				$imodel->attributes=$_POST['ProductManage'];
+				$imodel->date = $date;
+				$imodel->product_id = $product_id;
+				
+				$imodel->save();
+			}
+			//$model->product_id = $product_id;
+			/*$check = ProductManage::model()->findByAttributes(array('product_id'=>$product_id, 'date'=>$_POST['ProductManage']['date']));
 			if ($check != false){
 				$check->amount += $_POST['ProductManage']['amount'];
 				$check->save();
 				$this->redirect(array('view','id'=>$check->id));
-			}
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			}*/
+			$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -152,6 +165,32 @@ class ProductManageController extends Controller
 
 		$this->render('admin',array(
 			'model'=>$model,
+		));
+	}
+
+	public function actionSearch($key) {
+		$model = array();
+		$product = Product::model()->findAll("name LIKE '%$key%'");
+		foreach ($product as $p) {
+			$model[] = ProductManage::model()->findByAttributes(array('product_id'=>$p->id, 'date'=>date('Y-m-d')));
+		}
+		//Yii::log(print_r($model,true));
+
+		$dataProvider=new CArrayDataProvider($model, array(
+		    'id'=>'search_result',
+		    /*'sort'=>array(
+		        'attributes'=>array(
+		             'id', 'username', 'email',
+		        ),
+		    ),*/
+		    'pagination'=>array(
+		        'pageSize'=>10,
+		    ),
+		));
+
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+			'title' => "“{$key}”的搜索结果",
 		));
 	}
 
