@@ -53,14 +53,18 @@
 		            'class'=>'bootstrap.widgets.BootMenu',
 		            'htmlOptions'=>array('class'=>'pull-right'),
 		            'items'=>array(
+		            	array('url'=>array('/analasis/index'), 'label'=>'统计分析', 'visible'=>Yii::app()->getModule('user')->isAdmin()),
+		            	array('url'=>'#', 'label'=>'我的甜品屋', 'items'=>array(
+			            	array('url'=>array('/sale/index'), 'label'=>'购买记录', 'visible'=>!Yii::app()->user->isGuest),
+			            	array('url'=>array('/reservation/index'), 'label'=>'预订记录', 'visible'=>!Yii::app()->user->isGuest),
+			            	array('url'=>array('/card/index'), 'label'=>'会员卡', 'visible'=>!Yii::app()->user->isGuest),
+		            	)),
 						array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest),
 						array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest),
-		            	array('url'=>array('/sale/index'), 'label'=>'购买记录', 'visible'=>!Yii::app()->user->isGuest),
-		            	array('url'=>array('/reservation/index'), 'label'=>'预订记录', 'visible'=>!Yii::app()->user->isGuest),
-		            	array('url'=>'#', 'label'=>'我的账户', 'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
+		            	array('url'=>'#', 'label'=>'我的账户'.' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
 							array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest),
-		            		array('url'=>array('/card/index'), 'label'=>'我的会员卡'),
-							array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest),
+		            		array('url'=>array('/card/index'), 'label'=>'我的会员卡', 'visible'=>!Yii::app()->getModule('user')->isAdmin()),
+							array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout"), 'visible'=>!Yii::app()->user->isGuest),
 		            	)),
 		            ),
 		        ),

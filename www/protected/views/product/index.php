@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Products',
+	'产品',
 );
 
 $this->menu=array(
@@ -9,7 +9,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Products</h1>
+<h1>产品</h1>
 
 <?php $this->widget('ext.bootstrap.widgets.BootListView',array(
 	'dataProvider'=>$dataProvider,

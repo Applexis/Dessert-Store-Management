@@ -146,7 +146,26 @@ class SaleController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider(Sale::model()->owns());
+		if (!Yii::app()->getModule('user')->isAdmin())
+			$dataProvider=new CActiveDataProvider(Sale::model()->owns(),array(
+				'criteria'=>array(
+			        'order'=>'buy_time DESC',
+			    ),
+
+			    'pagination'=>array(
+			        'pageSize'=>10,
+			    ),
+			));
+		else
+			$dataProvider=new CActiveDataProvider('Sale',array(
+				'criteria'=>array(
+			        'order'=>'buy_time DESC',
+			    ),
+
+			    'pagination'=>array(
+			        'pageSize'=>10,
+			    ),
+			 ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

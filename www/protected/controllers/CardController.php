@@ -125,7 +125,10 @@ class CardController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider(Card::model()->mycard());
+		if (!Yii::app()->getModule('user')->isAdmin())
+			$dataProvider=new CActiveDataProvider(Card::model()->mycard());
+		else
+			$dataProvider = new CActiveDataProvider('Card');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

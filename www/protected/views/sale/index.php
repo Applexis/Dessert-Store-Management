@@ -9,7 +9,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>我的账单</h1>
+<h1>账单浏览</h1>
 
 <?php $this->widget('ext.bootstrap.widgets.BootListView',array(
 	'dataProvider'=>$dataProvider,

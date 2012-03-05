@@ -19,6 +19,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.*',
 		'application.modules.user.models.*',
 		'application.modules.user.components.*',
 		'application.helpers.*',
@@ -74,14 +75,14 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+					'levels'=>'error, warning, info, trace',
 				),
 				// uncomment the following to show log messages on web pages
 				
-				array(
-					'class'=>'CWebLogRoute',
-					'levels' => 'info, trace',
-				),
+				// array(
+				// 	'class'=>'CWebLogRoute',
+				// 	'levels' => 'info, trace',
+				// ),
 				
 			),
 		),

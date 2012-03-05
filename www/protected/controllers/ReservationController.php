@@ -147,7 +147,26 @@ class ReservationController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider(Reservation::model()->owns());
+		if (!Yii::app()->getModule('user')->isAdmin())
+			$dataProvider=new CActiveDataProvider(Reservation::model()->owns(), array(
+				'criteria'=>array(
+			        'order'=>'reserve_time DESC',
+			    ),
+
+			    'pagination'=>array(
+			        'pageSize'=>10,
+			    ),
+			));
+		else
+			$dataProvider=new CActiveDataProvider('Reservation', array(
+				'criteria'=>array(
+			        'order'=>'reserve_time DESC',
+			    ),
+
+			    'pagination'=>array(
+			        'pageSize'=>10,
+			    ),
+			));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
