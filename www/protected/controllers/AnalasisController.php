@@ -77,10 +77,35 @@ class AnalasisController extends Controller
 					$ana[$s->product->product_id] = 0;
 			}
 
+			if (arsort($ana)) {
+				$i = 0;
+				$id_arr = array();
+				$model_arr = array();
+				foreach (array_keys($ana) as $a) {
+					$id_arr[$i] = $a;
+					$model_arr[$i] = Product::model()->findByPk($a);
+					$i ++;
+					if ($i > 5) {
+						break;
+					}
+				}
+			}
+			//Yii::log(print_r($model_arr, true));
+			if (count($model_arr) != 0){
+				$dataProvider = new CArrayDataProvider($model_arr, array(
+					'id'=>'top5',
+					/*'pagination'=>array(
+				        'pageSize'=>10,
+				    ),*/
 
-			$id = array_search(max($ana), $ana);
-			$model = Product::model()->findByPk($id);
-			$this->render('popular', array('model'=>$model));
+				));
+				$this->render('popular', array('dataProvider'=>$dataProvider));
+			} else {
+
+				Yii::app()->user->setFlash('error', '还没有相关记录噢:(');
+				$this->redirect('popular');
+
+			}
 			return;
 		}
 
@@ -125,24 +150,48 @@ class AnalasisController extends Controller
 				$m_ana[$s->product->product_id] = 0;
 		}
 
+		Yii::log(print_r($m_ana, true));
+
 		$intersect = array_intersect_key($w_ana, $m_ana);
 		//Yii::log(print_r($intersect, true));
 		$max = 0;
 		$mk = 0;
+		$fraction_arr = array();
 		foreach ($intersect as $k=>$v) {
-			if ($w_ana[$k] / $m_ana[$k] > $max) {
-				$max = $w_ana[$k] / $m_ana[$k];
-				$mk = $k;
+			if ($m_ana[$k] != 0) {
+				$fraction_arr[$k] = $w_ana[$k] / $m_ana[$k];
 			}
 		}
 
-		if ($max != 0) {
-			$this->render('salepredict', array('model'=>Product::model()->findByPk($mk)));
-		} else {
-			Yii::app()->user->setFlash('warning', '没有找到符合条件的商品。。。');
-			$this->render('salepredict');
+		if (arsort($fraction_arr)) {
+			$i = 0;
+			$id_arr = array();
+			$model_arr = array();
+			foreach (array_keys($fraction_arr) as $a) {
+				$id_arr[$i] = $a;
+				$model_arr[$i] = Product::model()->findByPk($a);
+				$i ++;
+				if ($i > 3) {
+					break;
+				}
+			}
 		}
+		//Yii::log(print_r($model_arr, true));
+		if (count($model_arr) != 0){
+			$dataProvider = new CArrayDataProvider($model_arr, array(
+				'id'=>'top3',
+				/*'pagination'=>array(
+			        'pageSize'=>10,
+			    ),*/
 
+			));
+			$this->render('salepredict', array('dataProvider'=>$dataProvider));
+		} else {
+
+			Yii::app()->user->setFlash('error', '没有找到符合条件的商品。。。');
+			$this->redirect('salepredict');
+
+		}
 	}
 
 	public function actionUserprefer()

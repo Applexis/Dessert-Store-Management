@@ -29,20 +29,11 @@ $this->breadcrumbs=array(
 
 <?php 
 	$this->widget('ext.bootstrap.widgets.BootAlert');
-	if (isset($model)) {
- 
-		$this->widget('ext.bootstrap.widgets.BootDetailView',array(
-			'data'=>$model,
-			'attributes'=>array(
-				'id',
-				'name',
-				'intro',
-				array(
-					'name'  =>'pic',
-					'type'  => 'image',
-					'value' =>Yii::app()->baseUrl.'/uploads/product_img/'.$model->pic, $model->name,
-				),
-			),
+	if (isset($dataProvider)) {
+ 		
+		$this->widget('ext.bootstrap.widgets.BootListView',array(
+			'dataProvider'=>$dataProvider,
+			'itemView'=>'_view',
 		)); 
 	}
  ?>
