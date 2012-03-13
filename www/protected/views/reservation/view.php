@@ -5,11 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Reservation','url'=>array('index')),
-	array('label'=>'Create Reservation','url'=>array('create')),
-	array('label'=>'Update Reservation','url'=>array('update','id'=>$model->id)),
-	array('label'=>'Delete Reservation','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Reservation','url'=>array('admin')),
+	array('label'=>'今日产品','url'=>array('/productmanage/index')),
+	array('label'=>'返回主页','url'=>array('/index.php')),
 );
 $this->widget('ext.bootstrap.widgets.BootAlert');
 

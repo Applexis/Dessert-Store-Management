@@ -4,7 +4,6 @@
 	'data'=>$data,
 	'attributes'=>array(
 		array(
-			
 			'label' => '排名',
 			'value' => $index + 1,
 		),

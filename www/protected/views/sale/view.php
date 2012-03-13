@@ -5,11 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Sale','url'=>array('index')),
-	array('label'=>'Create Sale','url'=>array('create')),
-	array('label'=>'Update Sale','url'=>array('update','id'=>$model->id)),
-	array('label'=>'Delete Sale','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Sale','url'=>array('admin')),
+	array('label'=>'我的账单','url'=>array('index')),
+	array('label'=>'所有产品','url'=>array('/productmanage/index')),
 );
 
 $this->widget('ext.bootstrap.widgets.BootAlert');

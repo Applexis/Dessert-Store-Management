@@ -171,7 +171,7 @@ class AnalasisController extends Controller
 				$id_arr[$i] = $a;
 				$model_arr[$i] = Product::model()->findByPk($a);
 				$i ++;
-				if ($i > 3) {
+				if ($i > 1) {
 					break;
 				}
 			}
@@ -192,6 +192,10 @@ class AnalasisController extends Controller
 			$this->redirect('salepredict');
 
 		}
+	}
+
+	public function actionTrends($id) {
+
 	}
 
 	public function actionUserprefer()

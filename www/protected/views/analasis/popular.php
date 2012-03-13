@@ -35,5 +35,7 @@ $this->breadcrumbs=array(
 			'dataProvider'=>$dataProvider,
 			'itemView'=>'_view',
 		)); 
+			Yii::log(print_r($dataProvider->getData(), true));
 	}
+
  ?>
