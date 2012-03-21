@@ -22,6 +22,8 @@ return array(
 		'application.modules.user.models.*',
 		'application.modules.user.components.*',
 		'application.helpers.*',
+		'ext.giix-components.*',
+		'ext.relar.*'
 	),
 
 	'modules'=>array(
@@ -34,6 +36,7 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 			'generatorPaths'=>array(
 				'bootstrap.gii',
+				'ext.giix-core',
 			)
 		),
 		
@@ -119,6 +122,6 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 
-	'language'=>'ch',
+	//'language'=>'ch',
 	'timeZone'=>'Asia/Shanghai',
 );
